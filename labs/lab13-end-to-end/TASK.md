@@ -6,7 +6,7 @@ hours: 3h
 deliverable: 完成 BPE 对话整合相关 TODO，并用验证命令检查结果
 ---
 
-> **实验编号** Lab13 **预计耗时** 3h **对应 step** [step11](../../step11/) **本节产出** 补完 BPE 编码、解码、单轮生成和循环接口，并让验证输出相对当前实验基线继续转绿
+> **实验编号** Lab13 **预计耗时** 3h **本节产出** 补完 BPE 编码、解码、单轮生成和循环接口，并让验证输出相对当前实验基线继续转绿
 
 # Lab13：BPE 对话整合 — 编码、生成、解码、循环
 
@@ -45,7 +45,7 @@ labs/lab13-end-to-end/
 └── tests/                 # 留空（lab13 是综合章，不放输入数据）
 ```
 
-可调用的 framework API（声明在 `course/practice/framework/*.h`）：
+可调用的 framework API（声明在 `minillm_lab/framework/*.h`）：
 
 - `bpe_tokenizer.h`：`bpe_tokenizer_create()` / `bpe_tokenizer_free()` / `bpe_load_vocab()` / `bpe_encode()` / `bpe_decode()` / `bpe_vocab_size()`
 - `model.h`：`GPTModel` 结构 + `model_create()` / `model_free()` / `model_init_random()` / `model_forward()` / `model_load()` / `model_cache_create()` / `model_cache_free()`
@@ -59,7 +59,7 @@ labs/lab13-end-to-end/
 命令：
 
 ```bash
-cd course/practice/labs/lab13-end-to-end
+cd labs/lab13-end-to-end
 make clean && make test
 ```
 

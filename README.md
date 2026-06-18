@@ -8,27 +8,9 @@ title: Lab 与实践说明
 
 如果你把这门课想成“先看讲义，再做实验”，这里就是实验区的总入口。
 
-## 这个目录从哪里来
+## 先把 lab 仓库拉到本地
 
-在课程主仓库里，`course/practice/` 是一个 Git submodule，实际指向独立仓库：
-
-```text
-https://github.com/Luyoung0001/minillm_lab.git
-```
-
-推荐你通过课程仓库一起拉取它：
-
-```bash
-git clone --recurse-submodules https://github.com/Luyoung0001/miniLLM.git
-```
-
-如果你已经 clone 过课程仓库，但进入 `course/practice/` 时发现目录为空，回到课程仓库根目录执行：
-
-```bash
-git submodule update --init --recursive
-```
-
-你也可以单独 clone lab 仓库做练习：
+读课程网页时，你只需要拉取这个 lab 仓库：
 
 ```bash
 git clone https://github.com/Luyoung0001/minillm_lab.git
@@ -36,7 +18,13 @@ cd minillm_lab
 bash scripts/bootstrap-practice.sh
 ```
 
-两种方式看到的是同一套实验骨架。课程网页会继续用 `course/practice/...` 这个路径描述实践位置，是因为在主仓库里 submodule 就挂在这里。
+后面所有需要你修改的代码，都在这个仓库里。课程网页会用 `labs/...` 描述实验位置；这些路径都以 `minillm_lab` 仓库根目录为起点。
+
+lab 仓库地址是：
+
+```text
+https://github.com/Luyoung0001/minillm_lab.git
+```
 
 ## 你应该怎样使用这里
 
@@ -51,7 +39,7 @@ bash scripts/bootstrap-practice.sh
 
 ## 目录长什么样
 
-在 `course/practice/` 下面，最重要的是 `labs/`：
+在 lab 仓库下面，最重要的是 `labs/`：
 
 ```text
 labs/
@@ -88,7 +76,7 @@ lab01-step0/
 如果你刚完成 `Chapter 0`，那么第一站就是：
 
 ```bash
-cd course/practice/labs/lab01-step0
+cd labs/lab01-step0
 make clean && make test
 ```
 

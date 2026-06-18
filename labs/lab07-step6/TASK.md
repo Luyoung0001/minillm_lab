@@ -6,7 +6,7 @@ hours: 3h
 deliverable: 完成交叉熵、梯度、Adam 三个 TODO，并用验证命令检查结果
 ---
 
-> **实验编号** Lab07 **预计耗时** 3h **对应 step** [step6](../../step6/) **本节产出** 补完交叉熵、softmax+CE 梯度、Adam 更新三个接口，并让验证输出相对当前实验基线继续转绿
+> **实验编号** Lab07 **预计耗时** 3h **本节产出** 补完交叉熵、softmax+CE 梯度、Adam 更新三个接口，并让验证输出相对当前实验基线继续转绿
 
 # Lab07：训练循环
 
@@ -48,7 +48,7 @@ labs/lab07-step6/
     └── verify.h
 ```
 
-可调用的 framework API（声明在 `course/practice/framework/*.h`）：
+可调用的 framework API（声明在 `minillm_lab/framework/*.h`）：
 
 - `loss.h`：`cross_entropy_loss()` / `cross_entropy_loss_with_grad()` / `cross_entropy_grad()` / `softmax_cross_entropy_grad()`（这里更适合把公式自己写一遍）
 - `optimizer.h`：`AdamOptimizer` 结构 + `adam_create()` / `adam_step()` / `adam_free()`（**不要直接调 `adam_step`**——你写自己的）
@@ -58,7 +58,7 @@ labs/lab07-step6/
 命令：
 
 ```bash
-cd course/practice/labs/lab07-step6
+cd labs/lab07-step6
 make clean && make test
 ```
 

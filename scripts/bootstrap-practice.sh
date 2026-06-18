@@ -8,7 +8,6 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-COURSE_DIR="$(cd "$ROOT_DIR/.." && pwd)"
 LABS_DIR="$ROOT_DIR/labs"
 TARGET_LAB="lab01-step0"
 
@@ -30,8 +29,7 @@ fi
 echo "========================================"
 echo "miniLLM practice bootstrap"
 echo "========================================"
-echo "讲义目录: $COURSE_DIR"
-echo "实践框架: $ROOT_DIR"
+echo "Lab 仓库: $ROOT_DIR"
 echo "目标 lab : $TARGET_LAB"
 echo
 
@@ -77,11 +75,11 @@ if [[ "$TARGET_LAB" == "lab01-step0" ]]; then
 预期说明：
 - Chapter 0 的默认基线不是全 PASS
 - 当前脚手架应表现为 3 个 FAIL + 1 个 PASS
-- 这说明你已经进入学员实践骨架，而不是完整参考实现
+- 这说明你已经进入学员实践骨架
 
 下一步：
-1. 返回 course/00-orientation.md 收尾
-2. 阅读 course/chapters/ch01-step0-tensor.md
+1. 回到课程网页，继续读 Chapter 0 收尾
+2. 阅读 Chapter 1：张量与数学运算
 3. 打开 labs/lab01-step0/TASK.md 和 framework/student.c
 EOF
 else

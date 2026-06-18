@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# scripts/check.sh — 跑 course/practice 下所有 lab 的 verify
+# scripts/check.sh — 跑当前 lab 仓库下所有 lab 的 verify
 # 用法：
 #   bash scripts/check.sh             # 真跑（需要 gcc）
 #   bash scripts/check.sh --dry-run   # 只打印每个 lab 会跑什么

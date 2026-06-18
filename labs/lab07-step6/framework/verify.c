@@ -71,7 +71,7 @@ static void test_student_cross_entropy_loss(void) {
     float loss2 = student_cross_entropy_loss(logits, targets, seq_len, vocab_size);
     CHECK(loss2 < 0.5f, "loss small when target logit dominates");
 
-    /* 1c. 跟 framework 参考实现做差 */
+    /* 1c. 跟 framework 实现做差 */
     float loss_ref = cross_entropy_loss(logits, targets, seq_len, vocab_size);
     CHECK(fabsf(loss2 - loss_ref) < 1e-2f, "matches framework cross_entropy_loss within 0.01");
 

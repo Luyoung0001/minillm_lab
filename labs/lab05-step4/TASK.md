@@ -6,7 +6,7 @@ hours: 3h
 deliverable: 完成 framework/student.c 中本章 TODO，并用验证命令检查结果
 ---
 
-> **实验编号** Lab05 &nbsp;&nbsp; **预计耗时** 3h &nbsp;&nbsp; **对应 step** [step4](../../step4/) &nbsp;&nbsp; **本节产出** 补完 `student_layernorm`、`student_residual_add`、`student_block_forward`，并让验证输出相对当前实验基线继续转绿
+> **实验编号** Lab05 &nbsp;&nbsp; **预计耗时** 3h &nbsp;&nbsp; &nbsp;&nbsp; **本节产出** 补完 `student_layernorm`、`student_residual_add`、`student_block_forward`，并让验证输出相对当前实验基线继续转绿
 
 # Lab05 — Transformer Block：把 LN、Attention、FFN、残差拼成一个 Pre-LN Block
 
@@ -64,7 +64,7 @@ labs/lab05-step4/
 ### 命令
 
 ```bash
-cd course/practice/labs/lab05-step4
+cd labs/lab05-step4
 make clean && make test
 make clean     # 清理
 ```
@@ -122,7 +122,7 @@ input -> ln1_out = LN(input)
 ### 1.5.4 编译并跑通
 
 ```bash
-cd course/practice/labs/lab05-step4
+cd labs/lab05-step4
 make clean && make test
 ```
 

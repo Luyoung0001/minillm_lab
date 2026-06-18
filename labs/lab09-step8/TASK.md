@@ -6,7 +6,7 @@ hours: 2h
 deliverable: 完成 prompt 拼接与回复提取两个 TODO，并用验证命令检查结果
 ---
 
-> **实验编号** Lab09 **预计耗时** 2h **对应 step** [step8](../../step8/) **本节产出** 补完 prompt 拼接与回复提取两个接口，并让验证输出相对当前实验基线继续转绿
+> **实验编号** Lab09 **预计耗时** 2h **本节产出** 补完 prompt 拼接与回复提取两个接口，并让验证输出相对当前实验基线继续转绿
 
 ## 实验目的
 
@@ -30,7 +30,7 @@ deliverable: 完成 prompt 拼接与回复提取两个 TODO，并用验证命令
 
 ```bash
 # 工作目录
-cd course/practice/labs/lab09-step8
+cd labs/lab09-step8
 
 # 文件清单
 TASK.md            # 本文件

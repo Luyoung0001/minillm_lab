@@ -6,7 +6,7 @@ hours: 3h
 deliverable: 完成完整模型组装与保存相关 TODO，并用验证命令检查结果
 ---
 
-> **实验编号** Lab06 **预计耗时** 3h **对应 step** [step5](../../step5/) **本节产出** 补完默认配置、模型组装、模型保存三个接口，并让验证输出相对当前实验基线继续转绿
+> **实验编号** Lab06 **预计耗时** 3h **本节产出** 补完默认配置、模型组装、模型保存三个接口，并让验证输出相对当前实验基线继续转绿
 
 # Lab06：完整 GPT 模型
 
@@ -40,7 +40,7 @@ labs/lab06-step5/
     └── verify.h
 ```
 
-可调用的 framework API（声明在 `course/practice/framework/*.h`）：
+可调用的 framework API（声明在 `minillm_lab/framework/*.h`）：
 
 - `config.h`：`ModelConfig` 结构 + `default_config()` / `tiny_config()` / `medium_config()` / `config_validate()` / `config_print()`
 - `embedding.h`：`embedding_create()` / `embedding_free()` / `embedding_init_random()` / `embedding_init_sinusoidal_position()` / `embedding_forward()`
@@ -52,7 +52,7 @@ labs/lab06-step5/
 命令：
 
 ```bash
-cd course/practice/labs/lab06-step5
+cd labs/lab06-step5
 make clean && make test
 ```
 
