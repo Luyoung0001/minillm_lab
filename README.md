@@ -8,6 +8,36 @@ title: Lab 与实践说明
 
 如果你把这门课想成“先看讲义，再做实验”，这里就是实验区的总入口。
 
+## 这个目录从哪里来
+
+在课程主仓库里，`course/practice/` 是一个 Git submodule，实际指向独立仓库：
+
+```text
+git@github.com:Luyoung0001/minillm_lab.git
+```
+
+推荐你通过课程仓库一起拉取它：
+
+```bash
+git clone --recurse-submodules git@github.com:Luyoung0001/miniLLM.git
+```
+
+如果你已经 clone 过课程仓库，但进入 `course/practice/` 时发现目录为空，回到课程仓库根目录执行：
+
+```bash
+git submodule update --init --recursive
+```
+
+你也可以单独 clone lab 仓库做练习：
+
+```bash
+git clone git@github.com:Luyoung0001/minillm_lab.git
+cd minillm_lab
+bash scripts/bootstrap-practice.sh
+```
+
+两种方式看到的是同一套实验骨架。课程网页会继续用 `course/practice/...` 这个路径描述实践位置，是因为在主仓库里 submodule 就挂在这里。
+
 ## 你应该怎样使用这里
 
 最推荐的节奏非常固定：
